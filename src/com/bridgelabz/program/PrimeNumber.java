@@ -1,4 +1,4 @@
-package com.bridgelabz.prime.number;
+package com.bridgelabz.program;
 
 import com.bridgelabz.logical.program.ProgramLogic;
 

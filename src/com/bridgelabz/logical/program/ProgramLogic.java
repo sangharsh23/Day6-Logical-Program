@@ -13,6 +13,7 @@ public class ProgramLogic {
 		return num.nextInt();
 	}
 
+	// 1) program to find number is prime or not
 	public void getPrimeNumber(int number) {
 		boolean condition = false;
 		if (number == 0 || number == 1) {
@@ -29,6 +30,21 @@ public class ProgramLogic {
 				System.out.println(number + " is prime number");
 			else
 				System.out.println(number + " is not  prime number");
+		}
+	}
+    
+	//2) program to find perfect number
+	public void getPerfectNumber(int number) {
+		int sum = 0;
+		for (int i = 1; i < number; i++) {
+			if (number % i == 0) {
+				sum = sum + i;
+			}
+		}
+		if (sum == number) {
+			System.out.println(number + " is perfect number");
+		} else {
+			System.out.println(number + " is not not perfect number");
 		}
 	}
 }
