@@ -32,8 +32,8 @@ public class ProgramLogic {
 				System.out.println(number + " is not  prime number");
 		}
 	}
-    
-	//2) program to find perfect number
+
+	// 2) program to find perfect number
 	public void getPerfectNumber(int number) {
 		int sum = 0;
 		for (int i = 1; i < number; i++) {
@@ -44,7 +44,17 @@ public class ProgramLogic {
 		if (sum == number) {
 			System.out.println(number + " is perfect number");
 		} else {
-			System.out.println(number + " is not not perfect number");
+			System.out.println(number + " is not perfect number");
 		}
+	}
+
+	public void getReverseNumber(int number) {
+		int reverse = 0;
+		while (number != 0) {
+			int remainder = number % 10;
+			reverse = reverse * 10 + remainder;
+			number = number / 10;
+		}
+		System.out.println("given number after reverse : " + reverse);
 	}
 }
