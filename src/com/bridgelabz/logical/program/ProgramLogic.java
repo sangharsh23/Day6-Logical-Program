@@ -48,6 +48,7 @@ public class ProgramLogic {
 		}
 	}
 
+    //3) program to find reverse the number
 	public void getReverseNumber(int number) {
 		int reverse = 0;
 		while (number != 0) {
@@ -57,4 +58,16 @@ public class ProgramLogic {
 		}
 		System.out.println("given number after reverse : " + reverse);
 	}
+
+public void getFibonacciSeries(int number ) {
+	int number1 = 0; int number2 = 0; int number3 = 1;
+	for(int i = 1; i<= number; i++) {
+		number1 = number2;
+		number2 = number3;
+		number3 = number1 + number2;
+		System.out.print(number1 + " ");
+	}
+	
+
+}
 }
